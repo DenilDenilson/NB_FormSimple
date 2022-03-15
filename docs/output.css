@@ -480,14 +480,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.left-\[120px\] {
-  left: 120px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -497,16 +489,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-14 {
-  height: 3.5rem;
+.hidden {
+  display: none;
 }
 
 .h-12 {
@@ -521,32 +505,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
 .w-16 {
   width: 4rem;
-}
-
-.w-\[68px\] {
-  width: 68px;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-72 {
-  width: 18rem;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
 }
 
 .max-w-\[430px\] {
@@ -555,6 +515,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[650px\] {
   max-width: 650px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 
 .scale-75 {
@@ -567,32 +531,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .justify-center {
   justify-content: center;
-}
-
-.rounded-\[xl\] {
-  border-radius: xl;
-}
-
-.rounded-\[h-10\/2\] {
-  border-radius: h-10 / 2;
-}
-
-.rounded-\[20px\] {
-  border-radius: 20px;
 }
 
 .rounded-\[24px\] {
   border-radius: 24px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-2 {
-  border-width: 2px;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-\[1px\] {
@@ -608,8 +560,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 0.5;
 }
 
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ED8B8B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 139 139 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-image-bg-desktop {
+  background-image: url('./images/bg-pattern-desktop.svg');
 }
 
 .from-\[\#F7BEBE\] {
@@ -617,35 +598,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(247 190 190 / 0));
 }
 
+.from-\[\#FFFF\] {
+  --tw-gradient-from: #FFFF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
+}
+
 .to-\[\#ED8B8B\] {
   --tw-gradient-to: #ED8B8B;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.to-\[\#FFF4F4\] {
+  --tw-gradient-to: #FFF4F4;
 }
 
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-3 {
@@ -663,30 +631,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-center {
   text-align: center;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -707,35 +675,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 300;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
-.tracking-\[0\.25rem\] {
-  letter-spacing: 0.25rem;
+.leading-normal {
+  line-height: 1.5;
 }
 
 .tracking-\[0\.5rem\] {
   letter-spacing: 0.5rem;
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
-}
-
-.text-\[\#ffffff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#CE9696\] {
-  --tw-text-opacity: 1;
-  color: rgb(206 150 150 / var(--tw-text-opacity));
 }
 
 .text-\[\#403939\] {
@@ -743,32 +688,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(64 57 57 / var(--tw-text-opacity));
 }
 
-.text-opacity-50 {
-  --tw-text-opacity: 0.5;
+.text-\[\#CE9696\] {
+  --tw-text-opacity: 1;
+  color: rgb(206 150 150 / var(--tw-text-opacity));
 }
 
-.placeholder\:pl-2::-moz-placeholder {
-  padding-left: 0.5rem;
-}
-
-.placeholder\:pl-2:-ms-input-placeholder {
-  padding-left: 0.5rem;
-}
-
-.placeholder\:pl-2::placeholder {
-  padding-left: 0.5rem;
-}
-
-.placeholder\:pl-4::-moz-placeholder {
-  padding-left: 1rem;
-}
-
-.placeholder\:pl-4:-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-.placeholder\:pl-4::placeholder {
-  padding-left: 1rem;
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .placeholder\:pl-3::-moz-placeholder {
@@ -808,4 +735,181 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .placeholder\:opacity-50::placeholder {
   opacity: 0.5;
+}
+
+.invalid\:border-\[1px\]:invalid {
+  border-width: 1px;
+}
+
+.invalid\:border-\[2px\]:invalid {
+  border-width: 2px;
+}
+
+.invalid\:border-\[10px\]:invalid {
+  border-width: 10px;
+}
+
+.invalid\:border-\[\#F96161\]:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 97 97 / var(--tw-border-opacity));
+}
+
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#F7BEBE\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 190 190 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-50:hover {
+  --tw-bg-opacity: 0.5;
+}
+
+.hover\:bg-opacity-5:hover {
+  --tw-bg-opacity: 0.05;
+}
+
+.hover\:bg-gradient-to-br:hover {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.hover\:from-\[\#FFFFFF\]:hover {
+  --tw-gradient-from: #FFFFFF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
+}
+
+.hover\:to-\[\#FFF4F4\]:hover {
+  --tw-gradient-to: #FFF4F4;
+}
+
+.focus\:border-\[2px\]:focus {
+  border-width: 2px;
+}
+
+.focus\:border-\[\#F96161\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 97 97 / var(--tw-border-opacity));
+}
+
+.focus\:invalid\:border-\[2px\]:invalid:focus {
+  border-width: 2px;
+}
+
+.focus\:invalid\:border-\[4px\]:invalid:focus {
+  border-width: 4px;
+}
+
+.focus\:invalid\:border-\[10px\]:invalid:focus {
+  border-width: 10px;
+}
+
+.focus\:invalid\:border-\[\#F96161\]:invalid:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 97 97 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1280px) {
+  .xl\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-screen {
+    height: 100vh;
+  }
+
+  .xl\:w-20 {
+    width: 5rem;
+  }
+
+  .xl\:w-28 {
+    width: 7rem;
+  }
+
+  .xl\:w-24 {
+    width: 6rem;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:border-opacity-100 {
+    --tw-border-opacity: 1;
+  }
+
+  .xl\:bg-\[url\(\'\.\/images\/bg-pattern-desktop\.svg\'\)\] {
+    background-image: url('./images/bg-pattern-desktop.svg');
+  }
+
+  .xl\:bg-image-bg-desktop {
+    background-image: url('./images/bg-pattern-desktop.svg');
+  }
+
+  .xl\:bg-center {
+    background-position: center;
+  }
+
+  .xl\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
+  .xl\:fill-\[\#403939\] {
+    fill: #403939;
+  }
+
+  .xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:tracking-\[1rem\] {
+    letter-spacing: 1rem;
+  }
+
+  .xl\:tracking-\[0\.1rem\] {
+    letter-spacing: 0.1rem;
+  }
+
+  .xl\:hover\:bg-green-600:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  }
 }

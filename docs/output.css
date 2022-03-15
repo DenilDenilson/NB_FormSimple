@@ -488,44 +488,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.bottom-\[-10px\] {
-  bottom: -10px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.left-\[10px\] {
-  left: 10px;
-}
-
-.bottom-\[-28px\] {
-  bottom: -28px;
-}
-
-.left-\[32px\] {
-  left: 32px;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.left-\[-10px\] {
-  left: -10px;
 }
 
 .left-\[-32px\] {
   left: -32px;
 }
 
-.bottom-\[-80px\] {
-  bottom: -80px;
-}
-
 .bottom-\[-24px\] {
   bottom: -24px;
+}
+
+.left-\[32px\] {
+  left: 32px;
 }
 
 .mx-auto {
@@ -609,9 +585,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 0.5;
 }
 
-.bg-\[\#ED8B8B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 139 139 / var(--tw-bg-opacity));
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-\[\#F7BEBE\] {
+  --tw-gradient-from: #F7BEBE;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(247 190 190 / 0));
+}
+
+.to-\[\#ED8B8B\] {
+  --tw-gradient-to: #ED8B8B;
 }
 
 .py-6 {
@@ -740,9 +724,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(249 97 97 / var(--tw-border-opacity));
 }
 
-.hover\:bg-\[\#F7BEBE\]:hover {
+.hover\:bg-slate-600:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 190 190 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .focus\:border-\[2px\]:focus {

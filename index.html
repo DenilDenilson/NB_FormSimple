@@ -21,19 +21,22 @@
       <h1 class="text-center text-4xl font-semibold text-[#403939] tracking-[0.5rem]  xl:text-left xl:text-6xl xl:tracking-[1rem] xl:pt-10"><span class="text-[#CE9696] font-light">WE'RE</span> COMMING SOOM</h1>
       <p class="text-center text-[#CE9696] font-semibold text-sm pt-4  xl:text-left  xl:text-lg xl:tracking-[0.1rem] xl:pt-10">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form class="flex justify-center relative pt-6 max-w-[500px]  xl:pt-10">
-        <input class="border-[1px] border-[#CE9696] border-opacity-50  h-12 w-full max-w-[500px] rounded-[24px] pl-6 text-[#403939] font-semibold  placeholder:text-[#CE9696]  xl:border-opacity-100 placeholder:opacity-50 placeholder:pl-3
+        <input id="input_email" class="border-[1px] outline-none border-[#CE9696] border-opacity-50  h-12 w-full max-w-[500px] rounded-[24px] pl-6 text-[#403939] font-semibold  placeholder:text-[#CE9696]  xl:border-opacity-100 placeholder:opacity-50 placeholder:pl-3
         focus:border-[2px] focus:border-[#F96161]
         invalid:border-[2px] invalid:border-[#F96161]
         focus:invalid:border-[2px] focus:invalid:border-[#F96161]" 
         required  placeholder="Email Address" type="email">
         <button class="cursor-pointer rounded-[24px] h-12 w-16 bg-[#ED8B8B] absolute right-0 mx-auto  xl:w-24  hover:bg-[#F7BEBE]"
-        type="submit">
+        id="submit_button" type="submit">
           <svg class="mx-auto  xl:fill-[#403939]" xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
+          <svg class="invisible absolute bottom-0 top-0 my-auto left-[-32px]" id="icon_alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><circle cx="12" cy="12" r="12" fill="#F96464"/><path fill="#FFF" fill-rule="nonzero" d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"/></g></svg>
         </button>
+        <p class="absolute bottom-[-24px] left-[32px] text-[#F96161] text-sm font-semibold invisible" id="text_alert">Please provide a valid email</p>
       </form>
     </main>
   </div>
   <img class="hidden  xl:block xl:h-screen" src="./images/hero-desktop.jpg" alt="foto del modelo">
 
+  <script src="./src/main.js"></script>
 </body>
 </html>

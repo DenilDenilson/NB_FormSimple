@@ -12,7 +12,7 @@ submitButton.addEventListener("click", (e) => {
         iconAlert.classList.add('visible');
         textAlert.classList.remove('invisible');
         textAlert.classList.add('visible');
-        console.log('NoSexo');
+        
     }
     if (regexEmail.test(inputEmail.value))
     {
@@ -20,6 +20,6 @@ submitButton.addEventListener("click", (e) => {
         iconAlert.classList.add('invisible');
         textAlert.classList.remove('visible');
         textAlert.classList.add('invisible');
-        console.log('Sexo');
+        
     }
 });
